@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="vistas/menu.css">
+    <title>Login de usuario</title>
+</head>
+<body>
+
+    <section class="login-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 login-sec">
+                    <h2 class="text-center">Inicia sesión ahora</h2>
+                   
+                    <!--Formulario del Login-->
+                    <form class="login-form" id="frmLogin" method="POST" onsubmit="return loginUsuario()">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="text-uppercase">Usuario</label>
+                            <input type="text" id="login" class="form-control" name="login" placeholder="" required>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="text-uppercase">Contraseña</label>
+                            <input type="password" id="password" class="form-control" name="password" placeholder="" required>
+                        </div>
+                                           
+                            <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            <small>Acuérdate de mí</small>
+                            </label>
+                            <button type="submit" class="btn btn-login float-right" value="entrar">Entrar</button>
+                        </div>
+                    </form>
+
+                    
+                    <div class="copy-text">
+                        <a href="#"  data-toggle="modal" data-target="#modalContacto">Contactar con el administrador</a>
+                    </div>
+                </div>
+
+                <div class="col-md-8 banner-sec">
+                    <br>
+                    <div class="mx-auto" style="width: 350px;" >
+                        <img class="rounded float-right" style="height: 450px;" src="../helpdesk/Imagenes/Login/Logo_Muni_Yanacancha.png" alt="First slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="mx-auto" style="width: 600px;" >
+            <img class="rounded float-center" style="height: 167px;" src="../helpdesk/Imagenes/Login/Logo-HelpDesk.png" alt="First slide">
+        </div>
+        
+ <!-- Modal para informacion de contacto-->
+ <div class="modal fade" id="modalContacto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Contacto</h1>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Para obtener el usuario y contraseña del help desk enviar un mensaje al siguiente correo electronico: <a href="https://mail.google.com/mail/u/0/#inbox">mmorales@undac.edu.pe</a> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>                  
+   
+  
+  
+
+  <script src="public/bootstrap/bootstrap.min.4.1.0.css"></script>
+  <script src="public/bootstrap/bootstrap.min.4.1.1.css"></script>
+  <script src="public/jquery/jquery-3.6.0.min.js"></script>
+  <script src="public/bootstrap/popper.min.js"></script>
+  <script src="public/bootstrap/bootstrap.min.js"></script>
+  <script src="public/sweetalert2/sweetalert2@11.js"></script>
+  <script src="public/js/usuarios/login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+</body>
+</html>
